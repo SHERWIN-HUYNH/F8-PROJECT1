@@ -57,14 +57,15 @@ color: #FFFFFF;
     position: relative;
     height: 721px;;
     /*   Chieu cao 100% viewport */
+    /* position: sticky;
+    top: -26px;
+    z-index: 1; */
 }
 
 .navbar{
     display: flex;
     align-items: center; /*Can theo chieu doc*/ 
-    padding-top: 38px;
-    padding-bottom: 38px;
-
+    padding: 12px 0;
 }
 
 .navbar ul{
@@ -123,7 +124,7 @@ padding: 8px 14px;
 
     letter-spacing: 0.01em;
 
-    color: #687691;
+    color: #687690;
 
 }
 
