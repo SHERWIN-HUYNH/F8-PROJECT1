@@ -8,6 +8,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: ;
 }
 
 body{
@@ -52,20 +53,30 @@ color: #FFFFFF;
     overflow: hidden;
 }
 /* HEADER */
-.header{
+.fixed-header{
+    background:  #E6F0FF;
+   padding-top: 26px;
+   position: sticky;
+   top: -26px;
+   z-index: 1;
+
+}
+.header-wrap{
     background-color: #E6F0FF;
     position: relative;
-    height: 721px;;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /*   Chieu cao 100% viewport */
-    /* position: sticky;
-    top: -26px;
-    z-index: 1; */
+   
 }
 
 .navbar{
     display: flex;
     align-items: center; /*Can theo chieu doc*/ 
     padding: 12px 0;
+  
 }
 
 .navbar ul{
@@ -157,9 +168,7 @@ padding: 8px 14px;
 
 .hero-img{
     position: absolute;
-  object-fit: cover;
     right: calc((100vw - 1110px) / 2 - 100px);
-   top: 100px;
     bottom: 0;
 }
 
